@@ -7,31 +7,33 @@
   <title>Сайдбар</title>
 </head>
 <body>
-  <aside>
-    <header class="aside-header">
-      <a class="aside-header__profile-photo" href="#">
+  <aside class="sidebar">
+    <header class="sidebar-header">
+      <a class="sidebar-header__profile-photo" href="#">
         <img src="#" alt="profile-photo">
       </a>
-      <div class="aside-header__profile-info">
-        <h1 class="aside-header__profile-info--name">
-            Онуфрий Петрович
+      <div class="sidebar-header__profile-info">
+        <h1>
+            <a href="#">Онуфрий Петрович</a>
         </h1>
-        <span class="aside-header__profile-info--last-login-time"></span>
-        <a href="" class="aside-header__profile-info--logout">
+        <span class="sidebar-header__last-login">
+          Последний логин 16:45
+        </span>
+        <a href="#" class="sidebar-header__logout">
           Выход
         </a>
       </div>
     </header>
-    <main class="aside-menu">
-      <ul>
-        <li><a href="#">Dushboard</a></li>
+    <main class="sidebar-menu">
+      <ul class="sidebar-menu__main">
+        <li><a href="#">Dashboard</a></li>
         <li><a href="#">Wiki</a></li>
         <li><a href="#">Message</a></li>
         <li><a href="#">Some multi-line menu item</a>
-          <ul>
+          <ul class="sidebar-menu__second">
             <li><a href="#">Sub Menu Item 1-Level1</a></li>
             <li><a href="#">Sub Menu Item 2-Level1</a>
-              <ul>
+              <ul class="sidebar-menu__second">
                 <li><a href="#">Activate Sub menu Item - L2</a></li>
                 <li><a href="#">Unactivate Sub menu Item - L2</a></li>
               </ul>
@@ -40,18 +42,16 @@
         </li>
       </ul>
     </main>
-    <footer class="aside-footer">
-      <div class="aside-footer__soc-but">
-        <a class="aside-footer__soc-but--tw" href="#"></a>
-        <a class="aside-footer__soc-but--pnt" href="#"></a>
-        <a class="aside-footer__soc-but--fb"href="#"></a>
-        <a class="aside-footer__soc-but--gl"href="#"></a>
+    <footer class="sidebar-footer">
+      <div class="sidebar-footer__social">
+        <a class="sidebar-footer__social-item aside-footer__social-item--tw" href="#"></a>
+        <a class="sidebar-footer__social-item aside-footer__social-item--pnt" href="#"></a>
+        <a class="sidebar-footer__social-item aside-footer__social-item--fb"href="#"></a>
+        <a class="sidebar-footer__social-item aside-footer__social-item--gl"href="#"></a>
       </div>
-      <div class="aside-footer__contacts">
-        <span class="aside-footer__contacts--phone">
-          8 (800) 2000-600
-        </span>
-        <span class="aside-footer__contacts--schedule">
+      <div class="sidebar-footer__contacts">
+        <a class="sidebar-footer__phone" href="#">8 (800) 2000-600</a>
+        <span class="sidebar-footer__schedule">
           пн-вс 09:00-22:00
         </span>
       </div>
