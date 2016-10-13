@@ -1,8 +1,7 @@
 .sidebar-header {
-  // background-color: #243036;
   display: flex;
   border-bottom: 2px solid #b0bec5;
-
+  padding-bottom: 15px;
     a {
       text-decoration: none;
     }
@@ -11,6 +10,9 @@
     }
     img {
       border-radius: 100px;
+      margin-left: 15px;
+      margin-right: 15px;
+      margin-top: 25px;
     }
 }
 
