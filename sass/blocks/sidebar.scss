@@ -1,0 +1,10 @@
+.sidebar {
+  width: 450px;
+  background-color: #243036;
+}
+
+@media #{$tablet-widths} {
+  .sidebar {
+    width: 130px;
+  }
+}

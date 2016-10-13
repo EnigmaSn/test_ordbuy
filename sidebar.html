@@ -5,19 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Сайдбар</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
   <aside class="sidebar">
     <header class="sidebar-header">
       <a class="sidebar-header__profile-photo" href="#">
-        <img src="#" alt="profile-photo">
+        <img src="img/avatar.jpg" width="100" height="100" alt="profile-photo">
       </a>
       <div class="sidebar-header__profile-info">
-        <h1>
-            <a href="#">Онуфрий Петрович</a>
+        <h1 class="sidebar-header__profile-name">
+            <a href="#">Николай Владимирович</a>
         </h1>
         <span class="sidebar-header__last-login">
-          Последний логин 16:45
+          Последний логин 17:59
         </span>
         <a href="#" class="sidebar-header__logout">
           Выход
@@ -26,7 +27,10 @@
     </header>
     <main class="sidebar-menu">
       <ul class="sidebar-menu__main">
-        <li><a href="#">Dashboard</a></li>
+        <li><a href="#" class="dashboard">
+          <!-- <img src="img/dashboard.svg" width="40" height="40" alt="Dashboard"> -->
+          Dashboard
+        </a></li>
         <li><a href="#">Wiki</a></li>
         <li><a href="#">Message</a></li>
         <li><a href="#">Some multi-line menu item</a>

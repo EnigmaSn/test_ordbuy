@@ -1,0 +1,41 @@
+.sidebar-header {
+  // background-color: #243036;
+  display: flex;
+  border-bottom: 2px solid #b0bec5;
+
+    a {
+      text-decoration: none;
+    }
+    span {
+      color: #b0bec5;
+    }
+    img {
+      border-radius: 100px;
+    }
+}
+
+.sidebar-header__profile-name {
+    a {
+      color: #fff;
+    }
+}
+.sidebar-header__logout {
+  display: block;
+  color: #b0bec5;
+}
+
+@media #{$tablet-widths} {
+  .sidebar-header {
+    span {
+      display: none;
+    }
+  }
+  .sidebar-header__profile-name {
+      a {
+        display: none;
+      }
+  }
+  .sidebar-header__logout {
+    display: none;
+  }
+}
