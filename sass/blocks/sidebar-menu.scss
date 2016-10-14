@@ -1,4 +1,5 @@
 .sidebar-menu {
+  flex: 1 0 auto;
   ul {
     padding: 0;
     // padding-left: 50px;
@@ -11,10 +12,11 @@
         text-decoration: none;
         display: block;
         color: #fff;
-        padding: 15px 15px 15px 50px;
+        padding: 15px 15px 15px 15px;
+        display: flex;
+        align-items: center;
           img {
-            position: absolute;
-            left: 30px;
+            padding-right: 20px;
           }
       }
       ul {
@@ -33,22 +35,8 @@
     }
 }
 
-// .dashboard {
-//   position: relative;
-//     a:before {
-//       content: "";
-//       display: block;
-//       width: 40px;
-//     	height: 40px;
-//     	background: #fff;
-//       position: absolute;
-//       top: 10px;
-//       left: -60px;
-//     }
-// }
-//
-// @media #{$tablet-widths} {
-//   li {
-//     display: none;
-//   }
-// }
+@media #{$tablet-widths} {
+  li {
+    display: none;
+  }
+}
