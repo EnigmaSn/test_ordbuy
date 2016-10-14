@@ -26,3 +26,9 @@
   margin-left: 15px;
   padding-bottom: 20px;
 }
+
+@media #{$tablet-widths} {
+  .sidebar-footer {
+    display: none;
+  }
+}

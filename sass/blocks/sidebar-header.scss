@@ -3,9 +3,6 @@
   border-bottom: 2px solid #b0bec5;
   padding-bottom: 15px;
   // flex: 1 0 auto;
-    a {
-      text-decoration: none;
-    }
     span {
       color: #b0bec5;
     }
@@ -20,17 +17,26 @@
 .sidebar-header__profile-name {
     a {
       color: #fff;
+      text-decoration: none;
     }
 }
 .sidebar-header__logout {
   display: block;
   color: #b0bec5;
+  padding-left: 150px;
 }
 
 @media #{$tablet-widths} {
   .sidebar-header {
+    padding-bottom: 0;
     span {
       display: none;
+    }
+    img {
+      margin-left: 15px;
+      margin-right: 15px;
+      margin-top: 20px;
+      margin-bottom: 10px;
     }
   }
   .sidebar-header__profile-name {

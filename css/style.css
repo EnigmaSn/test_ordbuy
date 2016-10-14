@@ -7,14 +7,12 @@
 
 @media (max-width: 1366px) {
   .sidebar {
-    width: 130px; } }
+    width: 100px; } }
 
 .sidebar-header {
   display: flex;
   border-bottom: 2px solid #b0bec5;
   padding-bottom: 15px; }
-  .sidebar-header a {
-    text-decoration: none; }
   .sidebar-header span {
     color: #b0bec5; }
   .sidebar-header img {
@@ -24,15 +22,24 @@
     margin-top: 25px; }
 
 .sidebar-header__profile-name a {
-  color: #fff; }
+  color: #fff;
+  text-decoration: none; }
 
 .sidebar-header__logout {
   display: block;
-  color: #b0bec5; }
+  color: #b0bec5;
+  padding-left: 150px; }
 
 @media (max-width: 1366px) {
-  .sidebar-header span {
-    display: none; }
+  .sidebar-header {
+    padding-bottom: 0; }
+    .sidebar-header span {
+      display: none; }
+    .sidebar-header img {
+      margin-left: 15px;
+      margin-right: 15px;
+      margin-top: 20px;
+      margin-bottom: 10px; }
   .sidebar-header__profile-name a {
     display: none; }
   .sidebar-header__logout {
@@ -45,7 +52,8 @@
     margin: 0; }
   .sidebar-menu li {
     list-style: none;
-    width: 100%; }
+    width: 100%;
+    box-sizing: border-box; }
     .sidebar-menu li a {
       text-decoration: none;
       display: block;
@@ -67,8 +75,39 @@
     padding-left: 15px; }
 
 @media (max-width: 1366px) {
-  li {
-    display: none; } }
+  .sidebar-menu {
+    padding-top: 20px; }
+    .sidebar-menu li:hover {
+      position: relative; }
+      .sidebar-menu li:hover ul {
+        position: absolute;
+        top: 0;
+        left: 90px;
+        width: 200px; }
+    .sidebar-menu li:hover > ul {
+      display: block; }
+  .sidebar-menu__main span {
+    display: none; }
+  .sidebar-menu__main img {
+    padding-left: 15px; }
+  .sidebar-menu__main li:hover {
+    position: relative; }
+    .sidebar-menu__main li:hover span {
+      display: block;
+      position: absolute; }
+  .sidebar-menu__second li a {
+    padding-left: 15px;
+    padding-right: 0; }
+  .sidebar-menu__second li:hover {
+    position: relative;
+    border-left: 0; }
+    .sidebar-menu__second li:hover ul {
+      position: absolute;
+      top: 0;
+      left: 200px;
+      width: 200px; }
+  .sidebar-menu__second li:hover > ul {
+    padding-left: 0; } }
 
 .sidebar-footer {
   flex: 0 0 auto;
@@ -89,3 +128,7 @@
   color: #b0bec5;
   margin-left: 15px;
   padding-bottom: 20px; }
+
+@media (max-width: 1366px) {
+  .sidebar-footer {
+    display: none; } }
