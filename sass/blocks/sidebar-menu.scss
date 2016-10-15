@@ -11,8 +11,7 @@
       a {
         text-decoration: none;
         display: block;
-        color: #fff;
-        // padding: 15px 15px 15px 15px;
+        color: #b0bec5;
         padding-left: 0px;
         padding-right: 15px;
         padding-top: 15px;
@@ -29,59 +28,67 @@
         display: none;
       }
   }
-  li:hover {
-    position: relative;
-    border-left: 5px solid #d31c5d;
-    background-color: rgba(0,0,0,0.2);
-      ul {
-        position: absolute;
-        width: 350px;
-        top: 70px;
-        left: -5px;
-      }
-      a {
-        // padding-left: 30px;
-      }
-      svg {
-        padding-left: 10px;
-        fill: #fff;
-      }
-  }
-  li:hover:before {
-    content: "";
-    display: block;
-    position: absolute;
-
-  }
-  li:hover > ul {
-      display: block;
-      background-color: #36464f;
-      padding-left: 0px;
-    }
 }
+  .sidebar-menu__main {
+    li:hover {
+      position: relative;
+      border-left: 5px solid #d31c5d;
+      background-color: rgba(0,0,0,0.2);
+        ul {
+          position: absolute;
+          width: 350px;
+          top: 70px;
+          left: -5px;
+          background-color: rgba(0,0,0,0.2);
+            li {
+              padding-left: 30px;
+            }
+            li:hover {
+              padding-left: 25px;
+              border-left: 5px solid #d31c5d;
+            }
+        }
+        svg {
+          padding-left: 10px;
+          fill: #fff;
+        }
+        a {
+          color: #fff;
+          // border-left: 5px solid #d31c5d;
+        }
+    }
+
+    li:hover > ul {
+        display: block;
+        background-color: #36464f;
+        padding-left: 0px;
+      }
+  }
 
 .sidebar-menu__second {
     li {
       position: relative;
         a {
-          // padding-left: 30px;
           padding-right: 0;
         }
     }
     li:hover {
       position: relative;
       border-left: 0;
-      // border-left: 10px solid #d31c5d;
+      background: none;
         ul {
           position: absolute;
           max-width: 100%;
           top: 50px;
           left: 0px;
+            li:hover {
+              padding-left: 25px;
+            }
         }
     }
     li:hover > ul {
         a {
-          padding-left: 50px;
+          padding-left: 30px;
         }
     }
 }
@@ -109,13 +116,15 @@
       }
   }
   .sidebar-menu__main {
-      span {
-        display: none;
+      li {
+        a {
+          padding-left: 10px;
+        }
+        span {
+          display: none;
+        }
       }
-      svg {
-        padding-left: 15px;
-        fill: #b0bec5;
-      }
+
 
       li:hover {
         position: relative;

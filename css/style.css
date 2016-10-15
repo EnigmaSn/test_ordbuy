@@ -57,7 +57,7 @@
     .sidebar-menu li a {
       text-decoration: none;
       display: block;
-      color: #fff;
+      color: #b0bec5;
       padding-left: 0px;
       padding-right: 15px;
       padding-top: 15px;
@@ -70,26 +70,32 @@
         fill: #b0bec5; }
     .sidebar-menu li ul {
       display: none; }
-  .sidebar-menu li:hover {
-    position: relative;
-    border-left: 5px solid #d31c5d;
+
+.sidebar-menu__main li:hover {
+  position: relative;
+  border-left: 5px solid #d31c5d;
+  background-color: rgba(0, 0, 0, 0.2); }
+  .sidebar-menu__main li:hover ul {
+    position: absolute;
+    width: 350px;
+    top: 70px;
+    left: -5px;
     background-color: rgba(0, 0, 0, 0.2); }
-    .sidebar-menu li:hover ul {
-      position: absolute;
-      width: 350px;
-      top: 70px;
-      left: -5px; }
-    .sidebar-menu li:hover svg {
-      padding-left: 10px;
-      fill: #fff; }
-  .sidebar-menu li:hover:before {
-    content: "";
-    display: block;
-    position: absolute; }
-  .sidebar-menu li:hover > ul {
-    display: block;
-    background-color: #36464f;
-    padding-left: 0px; }
+    .sidebar-menu__main li:hover ul li {
+      padding-left: 30px; }
+    .sidebar-menu__main li:hover ul li:hover {
+      padding-left: 25px;
+      border-left: 5px solid #d31c5d; }
+  .sidebar-menu__main li:hover svg {
+    padding-left: 10px;
+    fill: #fff; }
+  .sidebar-menu__main li:hover a {
+    color: #fff; }
+
+.sidebar-menu__main li:hover > ul {
+  display: block;
+  background-color: #36464f;
+  padding-left: 0px; }
 
 .sidebar-menu__second li {
   position: relative; }
@@ -98,15 +104,18 @@
 
 .sidebar-menu__second li:hover {
   position: relative;
-  border-left: 0; }
+  border-left: 0;
+  background: none; }
   .sidebar-menu__second li:hover ul {
     position: absolute;
     max-width: 100%;
     top: 50px;
     left: 0px; }
+    .sidebar-menu__second li:hover ul li:hover {
+      padding-left: 25px; }
 
 .sidebar-menu__second li:hover > ul a {
-  padding-left: 50px; }
+  padding-left: 30px; }
 
 @media (max-width: 1366px) {
   .sidebar-menu {
@@ -119,11 +128,10 @@
         left: 95px; }
     .sidebar-menu li:hover > ul {
       display: block; }
-  .sidebar-menu__main span {
+  .sidebar-menu__main li a {
+    padding-left: 10px; }
+  .sidebar-menu__main li span {
     display: none; }
-  .sidebar-menu__main svg {
-    padding-left: 15px;
-    fill: #b0bec5; }
   .sidebar-menu__main li:hover {
     position: relative; }
     .sidebar-menu__main li:hover span {
