@@ -58,11 +58,16 @@
       text-decoration: none;
       display: block;
       color: #fff;
-      padding: 15px 15px 15px 15px;
+      padding-left: 0px;
+      padding-right: 15px;
+      padding-top: 15px;
+      padding-bottom: 15px;
       display: flex;
       align-items: center; }
-      .sidebar-menu li a img {
-        padding-right: 20px; }
+      .sidebar-menu li a svg {
+        padding-right: 20px;
+        padding-left: 15px;
+        fill: #b0bec5; }
     .sidebar-menu li ul {
       display: none; }
   .sidebar-menu li:hover {
@@ -74,6 +79,9 @@
       width: 350px;
       top: 70px;
       left: -5px; }
+    .sidebar-menu li:hover svg {
+      padding-left: 10px;
+      fill: #fff; }
   .sidebar-menu li:hover:before {
     content: "";
     display: block;
@@ -103,8 +111,6 @@
 @media (max-width: 1366px) {
   .sidebar-menu {
     padding-top: 20px; }
-    .sidebar-menu li {
-      width: 200px; }
     .sidebar-menu li:hover {
       position: relative; }
       .sidebar-menu li:hover ul {
@@ -115,31 +121,34 @@
       display: block; }
   .sidebar-menu__main span {
     display: none; }
-  .sidebar-menu__main img {
-    padding-left: 15px; }
+  .sidebar-menu__main svg {
+    padding-left: 15px;
+    fill: #b0bec5; }
   .sidebar-menu__main li:hover {
     position: relative; }
     .sidebar-menu__main li:hover span {
       display: block;
       position: absolute;
-      width: 200px;
+      min-width: 200px;
       background-color: #243036;
       top: 0;
       left: 95px;
       min-height: 55px;
       padding-left: 15px;
       padding-top: 15px; }
+    .sidebar-menu__main li:hover svg {
+      fill: #fff;
+      padding-left: 10px; }
   .sidebar-menu__second li a {
-    padding-left: 15px;
-    padding-right: 0; }
+    padding-left: 10px;
+    padding-right: 10px; }
   .sidebar-menu__second li:hover {
     position: relative;
     border-left: 0; }
     .sidebar-menu__second li:hover ul {
       position: absolute;
       top: 0;
-      left: 200px;
-      width: 200px; }
+      left: 200px; }
   .sidebar-menu__second li:hover > ul {
     padding-left: 0; } }
 
