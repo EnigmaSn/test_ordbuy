@@ -54,7 +54,6 @@
         }
         a {
           color: #fff;
-          // border-left: 5px solid #d31c5d;
         }
     }
 
@@ -97,19 +96,17 @@
 @media #{$tablet-widths} {
   .sidebar-menu {
     padding-top: 20px;
-      li {
-        // width: 200px;
-      }
       li:hover {
         position: relative;
+
           ul {
             position: absolute;
             top: 70px;
             left: 95px;
           }
-            // li {
-            //   width: 200px;
-            // }
+            li {
+              padding-left: 0;
+            }
       }
       li:hover > ul {
         display: block;
@@ -125,33 +122,46 @@
         }
       }
 
-
       li:hover {
         position: relative;
-        span {
-          display: block;
-          position: absolute;
-          min-width: 200px;
-          background-color: #243036;
-          top: 0;
-          left: 95px;
-          min-height: 55px;
-          padding-left: 15px;
-          padding-top: 15px;
-        }
-        svg {
-          fill: #fff;
-          padding-left: 10px;
-        }
+          span {
+            display: block;
+            position: absolute;
+            min-width: 250px;
+            max-width: 250px;
+            background-color: #243036;
+            top: 0;
+            left: 95px;
+            min-height: 55px;
+            padding-left: 20px;
+            padding-right: 60px;
+            padding-top: 15px;
+            box-sizing: border-box;
+            padding-bottom: 9px;
+          }
+          svg {
+            fill: #fff;
+            padding-left: 10px;
+          }
+          ul {
+            min-width: 250px;
+            max-width: 250px;
+            box-sizing: border-box;
+          }
+          li {
+            padding-left: 0;
+          }
+
       }
   }
   .sidebar-menu__second {
       li {
-        // min-width: 200px;
         a {
-          padding-left: 10px;
-          padding-right: 10px;
-          // min-width: 200px;
+          padding-left: 0px;
+          padding-right: 0px;
+          min-width: 200px;
+          max-width: 200px;
+          margin: 0;
         }
       }
       li:hover {
@@ -160,9 +170,15 @@
           ul {
             position: absolute;
             top: 0;
-            left: 200px;
-            // min-width: 200px;
+            left: 245px;
+
+              li a {
+                padding-left: 0px;
+                padding-right: 0px;
+                min-width: 200px;
+              }
           }
+
       }
       li:hover > ul {
         padding-left: 0;
