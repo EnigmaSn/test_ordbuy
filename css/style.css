@@ -71,10 +71,12 @@
     .sidebar-menu li ul {
       display: none; }
 
-.sidebar-menu__main li:hover > ul {
-  display: block;
-  background-color: #36464f;
-  padding-left: 0px; }
+.sidebar-menu__main {
+  position: relative; }
+  .sidebar-menu__main li:hover > ul {
+    display: block;
+    background-color: #36464f;
+    padding-left: 0px; }
 
 .sidebar-menu__main-item {
   background-image: url("../img/right-arrow.svg");
@@ -82,11 +84,11 @@
   background-repeat: no-repeat;
   background-position: 95% 50%; }
 
-.sidebar-menu__main-item:hover {
+.sidebar-menu__main-item--open:hover {
   background-image: url("../img/up-arrow.svg");
   background-size: 20px;
   background-repeat: no-repeat;
-  background-position: 95% 50%; }
+  background-position: 95% 25px; }
 
 .sidebar-menu__main-item a:hover {
   position: relative;
@@ -94,6 +96,16 @@
   background-color: rgba(0, 0, 0, 0.2); }
   .sidebar-menu__main-item a:hover svg {
     padding-left: 15px; }
+
+.sidebar-menu__second {
+  padding-left: 30px;
+  padding-right: 0; }
+
+.sidebar-menu__second-item--open:hover {
+  background-image: url("../img/up-arrow.svg");
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 95% 15px; }
 
 @media (max-width: 1366px) {
   .sidebar-menu {
