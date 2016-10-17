@@ -93,9 +93,11 @@
 .sidebar-menu__main-item a:hover {
   position: relative;
   border-left: 5px solid #d31c5d;
-  background-color: rgba(0, 0, 0, 0.2); }
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff; }
   .sidebar-menu__main-item a:hover svg {
-    padding-left: 15px; }
+    padding-left: 15px;
+    fill: #fff; }
 
 .sidebar-menu__second-item a {
   padding-left: 30px; }
@@ -144,8 +146,7 @@
   .sidebar-menu__main-item--open:hover {
     background-image: none; }
     .sidebar-menu__main-item--open:hover ul a:hover {
-      border-left: none;
-      color: #fff; }
+      border-left: none; }
   .sidebar-menu__second {
     position: absolute;
     top: 60px;
