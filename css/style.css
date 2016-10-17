@@ -58,10 +58,9 @@
       text-decoration: none;
       display: block;
       color: #b0bec5;
-      padding-left: 0px;
-      padding-right: 15px;
-      padding-top: 15px;
-      padding-bottom: 15px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      min-height: 40px;
       display: flex;
       align-items: center; }
       .sidebar-menu li a svg {
@@ -85,10 +84,11 @@
   background-position: 95% 50%; }
 
 .sidebar-menu__main-item--open:hover {
+  background-color: #36464f;
   background-image: url("../img/up-arrow.svg");
   background-size: 20px;
   background-repeat: no-repeat;
-  background-position: 95% 25px; }
+  background-position: 95% 20px; }
 
 .sidebar-menu__main-item a:hover {
   position: relative;
@@ -97,15 +97,23 @@
   .sidebar-menu__main-item a:hover svg {
     padding-left: 15px; }
 
-.sidebar-menu__second {
-  padding-left: 30px;
-  padding-right: 0; }
+.sidebar-menu__second-item a {
+  padding-left: 30px; }
+
+.sidebar-menu__second-item a:hover {
+  padding-left: 25px; }
+
+.sidebar-menu__second-item li a {
+  padding-left: 60px; }
+
+.sidebar-menu__second-item li a:hover {
+  padding-left: 55px; }
 
 .sidebar-menu__second-item--open:hover {
   background-image: url("../img/up-arrow.svg");
   background-size: 20px;
   background-repeat: no-repeat;
-  background-position: 95% 15px; }
+  background-position: 95% 20px; }
 
 @media (max-width: 1366px) {
   .sidebar-menu {
