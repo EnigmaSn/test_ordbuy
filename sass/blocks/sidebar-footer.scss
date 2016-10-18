@@ -6,6 +6,7 @@
   //   max-width: 100%;
   flex: 0 0 auto;
   min-height: 120px;
+  padding-bottom: 20px;
 }
 
 .sidebar-footer__social {
@@ -21,14 +22,15 @@
       border-radius: 100%;
       margin-left: 10px;
       margin-right: -5px;
+      margin-bottom: 10px;
     }
     svg:hover {
       border-color: transparent;
-      @each $social-network in $brand-color {
-        .sidebar-footer__social-item--#{$social-network}:hover {
-          background: $brand-color;
-        }
-      }
+      // @each $social-network in $brand-color {
+      //   .sidebar-footer__social-item--#{$social-network}:hover {
+      //     background: $brand-color;
+      //   }
+      // }
     }
 }
 .sidebar-footer__phone {
@@ -36,7 +38,7 @@
   color: #fff;
   text-decoration: none;
   margin-left: 15px;
-  margin-top: 20px;
+  padding-top: 20px;
 
   font-size: 20px;
 }
@@ -44,7 +46,7 @@
 .sidebar-footer__schedule {
   color: #b0bec5;
   margin-left: 15px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   font-size: 10px;
 }
 
