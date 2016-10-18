@@ -13,15 +13,22 @@
         text-decoration: none;
         display: block;
         color: #b0bec5;
+        font-size: 10px;
         padding-top: 10px;
         padding-bottom: 10px;
+
         min-height: 40px;
         display: flex;
         align-items: center;
           svg {
-            padding-right: 20px;
-            padding-left: 20px;
+            padding-right: 10px;
+            padding-left: 10px;
             fill: #b0bec5;
+            min-width: 40px;
+            min-height: 40px;
+          }
+          span {
+            padding-right: 10px;
           }
       }
       ul {
@@ -41,7 +48,7 @@
 
 .sidebar-menu__main-item {
     background-image: url("../img/right-arrow.svg");
-    background-size: 20px;
+    background-size: 10px;
     background-repeat: no-repeat;
     background-position: 95% 50%;
 }
@@ -49,7 +56,7 @@
 .sidebar-menu__main-item--open:hover {
    background-color: #36464f;
     background-image: url("../img/up-arrow.svg");
-    background-size: 20px;
+    background-size: 10px;
     background-repeat: no-repeat;
     background-position: 95% 20px;
 }
@@ -60,7 +67,7 @@
   background-color: rgba(0,0,0,0.2);
   color: #fff;
     svg {
-      padding-left: 15px;
+      padding-left: 5px;
       fill: #fff;
     }
 }
@@ -73,19 +80,21 @@
     padding-left: 25px;
   }
   li a {
-    padding-left: 60px;
+    padding-left: 50px;
   }
   li a:hover {
-    padding-left: 55px;
+    padding-left: 45px;
   }
 }
 
 .sidebar-menu__second-item--open:hover {
   background-image: url("../img/up-arrow.svg");
-  background-size: 20px;
+  background-size: 10px;
   background-repeat: no-repeat;
   background-position: 95% 20px;
 }
+
+
 
 @media #{$tablet-widths} {
   .sidebar-menu__main {
@@ -97,9 +106,7 @@
   .sidebar-menu__main-item {
     background-image: none;
     position: relative;
-      a {
-        padding-left: 10px;
-      }
+
       a:hover {
         border-left: none;
         background-color: none;
@@ -114,7 +121,7 @@
       background-color: #36464f;
       position: absolute;
       top: 0;
-      left: 95px;
+      left: 55px;
       min-height: 60px;
       min-width: 200px;
       padding-left: 10px;
@@ -125,23 +132,22 @@
   }
   .sidebar-menu__main-item--open:hover {
     background-image: none;
-      ul {
-        a:hover {
-          border-left: none;
-        }
-      }
   }
 
   .sidebar-menu__second {
     position: absolute;
     top: 60px;
-    left: 95px;
+    left: 55px;
+      li {
+        min-height: 60px;
+      }
   }
 
   .sidebar-menu__second-item {
     a {
       padding-left: 20px;
       min-width: 200px;
+      min-height: 60px;
       box-sizing: border-box;
     }
     a:hover {
@@ -149,7 +155,7 @@
     }
     ul {
       position: absolute;
-      top: 65px;
+      top: 60px;
       left: 200px;
     }
     li a {
