@@ -7,36 +7,49 @@
 .sidebar-footer__social {
   border-bottom: 2px solid #b0bec5;
 
-  $brand-color: (
+    a {
+      font-size: 0;
+    }
+    // svg {
+    //   fill: #fff;
+    //   padding: 10px;
+    //   border: 1px solid rgba(255,255,255,0.3);
+    //   opacity: 75%;
+    //   border-radius: 100%;
+    //   margin-left: 10px;
+    //   margin-right: -5px;
+    //   margin-bottom: 10px;
+    // }
+    // svg:hover {
+    //   border-color: transparent;
+    //   background
+    // }
+}
+
+.sidebar-footer__social-item {
+  fill: #fff;
+  padding: 10px;
+  border: 1px solid rgba(255,255,255,0.3);
+  opacity: 75%;
+  border-radius: 100%;
+  margin-left: 10px;
+  margin-right: -5px;
+  margin-bottom: 10px;
+
+  $brand-colors: (
     pinterest: #bd081c,
     facebook: #3b5998,
     google: #dd4b39,
     twitter: #1da1f2
   );
 
-  @each $brand, $color in $brand-color {
-    &--#{$brand} svg:hover {
-      background: $brand-color;
-    }
-  }
-
-
-    a {
-      font-size: 0;
-    }
-    svg {
-      fill: #fff;
-      padding: 10px;
-      border: 1px solid rgba(255,255,255,0.3);
-      opacity: 75%;
-      border-radius: 100%;
-      margin-left: 10px;
-      margin-right: -5px;
-      margin-bottom: 10px;
-    }
-    svg:hover {
+  @each $brand, $color in $brand-colors
+ {
+    &--#{$brand}:hover {
+      background: $color;
       border-color: transparent;
     }
+  }
 }
 
 
