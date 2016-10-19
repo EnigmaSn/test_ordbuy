@@ -12,6 +12,8 @@
 @media #{$tablet-widths} {
   .sidebar {
     width: 60px;
+    background-color: #243036;
+    min-height:100vh;
   }
   // .sidebar:active {
   //   @media #{$desctop-widths};
