@@ -63,11 +63,11 @@
 
 .sidebar-menu__main-item a:hover {
   position: relative;
-  border-left: 5px solid #d31c5d;
+  box-shadow: inset 5px 0 #d31c5d;
   background-color: rgba(0,0,0,0.2);
   color: #fff;
     svg {
-      padding-left: 5px;
+      padding-left: 10px;
       fill: #fff;
     }
 }
@@ -75,16 +75,18 @@
 .sidebar-menu__second-item {
   a {
     padding-left: 30px;
+    padding-right: 20px;
   }
-  a:hover {
-    padding-left: 25px;
-  }
+  // a:hover {
+  //   padding-left: 25px;
+  // }
   li a {
     padding-left: 50px;
+    padding-right: 15px;
   }
-  li a:hover {
-    padding-left: 45px;
-  }
+  // li a:hover {
+  //   padding-left: 45px;
+  // }
 }
 
 .sidebar-menu__second-item--open:hover {
@@ -93,8 +95,6 @@
   background-repeat: no-repeat;
   background-position: 95% 20px;
 }
-
-
 
 @media #{$tablet-widths} {
   .sidebar-menu__main {

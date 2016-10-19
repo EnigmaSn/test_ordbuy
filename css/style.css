@@ -117,24 +117,20 @@ body {
 
 .sidebar-menu__main-item a:hover {
   position: relative;
-  border-left: 5px solid #d31c5d;
+  box-shadow: inset 5px 0 #d31c5d;
   background-color: rgba(0, 0, 0, 0.2);
   color: #fff; }
   .sidebar-menu__main-item a:hover svg {
-    padding-left: 5px;
+    padding-left: 10px;
     fill: #fff; }
 
 .sidebar-menu__second-item a {
-  padding-left: 30px; }
-
-.sidebar-menu__second-item a:hover {
-  padding-left: 25px; }
+  padding-left: 30px;
+  padding-right: 20px; }
 
 .sidebar-menu__second-item li a {
-  padding-left: 50px; }
-
-.sidebar-menu__second-item li a:hover {
-  padding-left: 45px; }
+  padding-left: 50px;
+  padding-right: 15px; }
 
 .sidebar-menu__second-item--open:hover {
   background-image: url("../img/up-arrow.svg");
