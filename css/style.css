@@ -72,7 +72,8 @@ body {
     display: none; } }
 
 .sidebar-menu {
-  flex: 1 0 auto; }
+  flex: 1 0 auto;
+  margin-bottom: auto; }
   .sidebar-menu ul {
     padding: 0;
     margin: 0; }
