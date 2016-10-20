@@ -34,22 +34,25 @@ body {
     margin-bottom: 0; }
   .sidebar-header span {
     color: #b0bec5;
-    font-size: 10px; }
+    font-size: 10px;
+    padding-right: 10px; }
   .sidebar-header img {
-    border-radius: 100px;
+    border-radius: 50px;
     margin-left: 5px;
-    margin-right: 15px;
-    margin-top: 25px; }
+    margin-right: 10px;
+    margin-top: 15px; }
 
 .sidebar-header__profile-name a {
   color: #fff;
-  text-decoration: none; }
+  text-decoration: none;
+  padding-right: 10px; }
 
 .sidebar-header__logout {
   display: block;
   color: #b0bec5;
   padding-left: 80px;
-  font-size: 10px; }
+  font-size: 10px;
+  padding-right: 10px; }
 
 @media (max-width: 768px) {
   .sidebar-header {
@@ -116,7 +119,7 @@ body {
   background-image: url("../img/up-arrow.svg");
   background-size: 10px;
   background-repeat: no-repeat;
-  background-position: 95% 20px; }
+  background-position: 95% 25px; }
 
 .sidebar-menu__main-item a:hover {
   position: relative;
@@ -139,7 +142,7 @@ body {
   background-image: url("../img/up-arrow.svg");
   background-size: 10px;
   background-repeat: no-repeat;
-  background-position: 95% 20px; }
+  background-position: 95% 25px; }
 
 @media (max-width: 768px) {
   .sidebar-menu__main span {
